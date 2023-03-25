@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Feb 10 22:18:11 2023
-
-@author: Aditi Kannan
-"""
-
 
 #taking input data 
 instance=int(input("enter how many instances in training data: "))
