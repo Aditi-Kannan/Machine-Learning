@@ -5,10 +5,6 @@ Created on Sat Mar  4 18:46:24 2023
 @author: Aditi Kannan
 """
 
-# import numpy as np
-# import pandas as pd
-# import random
-# import csv
 
 def g_0(n):
     return ("?",)*n
@@ -49,14 +45,7 @@ def min_specializations(h, domains, x):
             results.append(h_new)
     return results
 
-# with open('./ceaexample.csv')  as csvFile:
-#         examples = [tuple(line) for line in csv.reader(csvFile)]
-        
-# examples=[('big', 'red', 'circle', 'no'),
-#  ('small', 'red', 'triangle', 'no'),
-#  ('small', 'red', 'circle', 'yes'),
-#  ('big ', 'blue', 'circle', 'no'),
-#  ('small', 'blue', 'circle', 'yes')]
+
 examples=[('round','triangle','round','purple','yes','yes'),('square','square','square','green','yes','no'),
           ('square','triangle','round','yellow','yes','yes'),('round','triangle','round','green','no','no'),
           ('square','square','round','yellow','yes','yes')]
