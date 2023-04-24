@@ -5,5 +5,5 @@ Each project is located in a separate directory.
 
 Table of Contents
 1) college-coursework : This folder contains all the algorithms implemented as a part of ML lab in my engineering course
-2) Demand-Forecasting : This folder contains presentations, python scripts and the dataset used for forecasting demand of 
+2) Demand-Forecasting : This folder contains python scripts and the dataset used for forecasting demand of 
                         abrasives as a part of ML Lab.
