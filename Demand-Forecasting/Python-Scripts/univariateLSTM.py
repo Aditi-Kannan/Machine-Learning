@@ -2,7 +2,7 @@
 """
 Created on Sun Apr 23 11:16:46 2023
 
-@author: Aditi Kannan
+@author: 0110B9744
 """
 
 # LSTM for Abrasives
@@ -31,9 +31,9 @@ tf.random.set_seed(7)
 # dataset = read_csv('C:\\Users\\0110B9744\\Desktop\\abr_10Apr2023.csv', header=0, index_col=0)
 # dataframe = dataset[['BC26']]
 
-df_comb1 = pd.read_excel("C:\\Users\\Aditi Kannan\\Desktop\\Demand_Forecasting\\Demand_07Dec2021.xlsx")
+df_comb1 = pd.read_excel("C:\\PythonScripts_DemandForecasting_23Mar2023\\Demand_07Dec2021.xlsx")
 df_comb1['Invoice Date'] = df_comb1['Invoice Date'].apply(lambda x: pd.to_datetime(x,format='%Y-%m') + pd.tseries.offsets.MonthEnd())
-df_comb1 = df_comb1[df_comb1['Invoice Date']<= '2019-12-31']
+df_comb1 = df_comb1[df_comb1['Invoice Date']<= '2018-07-31']
 df_comb1 = df_comb1[['Invoice Date','BC26']]
 df_comb1 = df_comb1.dropna()
 df_comb1.reset_index(inplace = True, drop = True)
@@ -50,7 +50,7 @@ dataset = dataset.astype('float32')
 scaler = MinMaxScaler(feature_range=(0, 1))
 dataset = scaler.fit_transform(dataset)
 # split into train and test sets
-train_size = int(len(dataset) * 0.80)
+train_size = int(len(dataset) * 0.75)
 test_size = len(dataset) - train_size
 train, test = dataset[0:train_size,:], dataset[train_size:len(dataset),:]
 
